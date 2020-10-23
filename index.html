@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Assignment 3 Sal Pistone</title>
+    <title>Quick Quiz - Play</title>
     <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="questions.json"></script>
 </head>
 <body>
+<div class="page">
 <div class="container">
     <div id="game" class="justify-center flex-column">
                 <p id="progressText" class="hud-prefix">
@@ -29,16 +31,23 @@
         <h2 id="question">What is the answer to this questions?</h2>
         <div class="choice-container">
             <p class="choice-prefix">A</p>
-            <p class="choice-text" data-number="1">Choice 1</p>
+            <button class="choice-text" data-number="1">Choice 1</button>
         </div>
         <div class="choice-container">
             <p class="choice-prefix">B</p>
-            <p class="choice-text" data-number="2">Choice 2</p>
+            <button class="choice-text" data-number="2">Choice 2</button>
         </div>
         <div class="choice-container">
             <p class="choice-prefix">C</p>
-            <p class="choice-text" data-number="3">Choice 3</p>
+            <button class="choice-text" data-number="3">Choice 3</button>
         </div>
+        <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <button class="choice-text" data-number="4">Choice 4</button>
+        </div>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
+
+
