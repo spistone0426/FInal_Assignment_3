@@ -1,0 +1,12 @@
+.container{
+    align-content: center;
+}
+
+html{
+    background: no-repeat, fixed linear-gradient(rgba(2,255,175,0.69), rgba(237,63,79,0.69), aqua);
+    background-size: 100%;
+}
+
+.container {
+    align-content: center;
+}
