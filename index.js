@@ -11,6 +11,8 @@ let availableQuesions = [];
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 let questions = [];
+let startTime;
+let endTime;
 
 
 fetch( 'https://opentdb.com/api.php?amount=20&category=18&difficulty=medium&type=multiple')
@@ -103,6 +105,34 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
+
+function start() {
+    startTime = new Date();
+
+    var x = setInterval(function() {
+
+        endTime = new Date();
+        let diffTime = endTime - startTime;
+
+        diffTime /=1000;
+
+        let seconds = Math.round(diffTime);
+
+        var x = setInterval(function () {
+            console.log(seconds + ' seconds');
+
+
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = seconds;
+
+        });
+
+        if (time === 0) {
+            clearInterval(x);
+            window.onload = start();
+        }
+    });
+}
 
 const quizQuestions = [
     {
