@@ -9,9 +9,9 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
-
+const MAX_QUESTIONS = 5;
 let questions = [];
+
 
 fetch( 'https://opentdb.com/api.php?amount=20&category=18&difficulty=medium&type=multiple')
     .then((response) => {
@@ -44,7 +44,6 @@ fetch( 'https://opentdb.com/api.php?amount=20&category=18&difficulty=medium&type
     });
 
 
-
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -55,10 +54,12 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
+        //go to the end page
         return window.location.assign('/end.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -266,8 +267,10 @@ const quizQuestions = [
         "answer": 3
     }
 ];
+
 /*
-Sources That helped me
+Sources
 https://www.bestcssbuttongenerator.com/
 https://www.youtube.com/watch?v=jK5zzSA2JHI&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11
+https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally
  */
