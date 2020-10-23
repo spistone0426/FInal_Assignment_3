@@ -14,8 +14,8 @@ const MAX_QUESTIONS = 3;
 let questions = [];
 
 fetch( 'https://api.mocki.io/v1/812069ed')
-    .then((res) => {
-        return res.json();
+    .then((response) => {
+        return response.json();
     })
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
