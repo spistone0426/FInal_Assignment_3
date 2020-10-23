@@ -13,7 +13,7 @@ const MAX_QUESTIONS = 3;
 
 let questions = [];
 
-fetch( 'https://api.mocki.io/v1/812069ed')
+fetch( 'https://opentdb.com/api.php?amount=20&category=18&difficulty=medium&type=multiple')
     .then((response) => {
         return response.json();
     })
