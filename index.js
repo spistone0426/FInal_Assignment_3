@@ -11,7 +11,7 @@ let availableQuesions = [];
 
 let questions = [];
 
-fetch( 'C:\\Users\\spist222\\WebstormProjects\\quiz_app)_tutorial\\questions.json')
+fetch( 'https://my-json-server.typicode.com/spistone0426/Final_Assignment_3')
     .then((res) => {
         return res.json();
     })
