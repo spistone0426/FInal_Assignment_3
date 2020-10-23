@@ -4,7 +4,6 @@
     "choice1": "Python",
     "choice2": "Java",
     "choice3": "C++",
-    "choice4": "Ruby",
     "answer": 2
   },
   {
@@ -12,7 +11,6 @@
     "choice1": "Objective-C",
     "choice2": "C",
     "choice3": "C#",
-    "choice4": "C++",
     "answer": 3
   },
   {
@@ -29,15 +27,13 @@
     "choice1": "Println",
     "choice2": "Print",
     "choice3": "Console.log",
-    "choice4": "None of the Above",
-    "answer": 4
+    "answer": 1
   },
   {
     "question": "What language does not require Semicolons",
     "choice1": "Python",
     "choice2": "Java",
     "choice3": "C#",
-    "choice4": "Ruby",
     "answer": 1
   },
   {
@@ -45,7 +41,6 @@
     "choice1": "iOS",
     "choice2": "Windows",
     "choice3": "Linux",
-    "choice4": "Android",
     "answer": 2
   },
   {
@@ -53,7 +48,6 @@
     "choice1": "Binary-Search",
     "choice2": "Linked-List",
     "choice3": "Pyramid-Search",
-    "choice4": "Red-Black Tree",
     "answer": 3
   },
   {
@@ -69,7 +63,6 @@
     "choice1": "Hello",
     "choice2": "A",
     "choice3": "3",
-    "choice4": "3.14",
     "answer": 1
   },
   {
@@ -77,23 +70,20 @@
     "choice1": "Hello",
     "choice2": "A",
     "choice3": "3",
-    "choice4": "3.14",
     "answer": 3
   },
   {
     "question": "What is an example of a double/float",
     "choice1": "Hello",
     "choice2": "A",
-    "choice3": "3",
-    "choice4": "3.14",
-    "answer": 4
+    "choice3": "3.14",
+    "answer": 3
   },
   {
     "question": "What is an example of a char",
     "choice1": "Hello",
     "choice2": "A",
     "choice3": "3",
-    "choice4": "3.14",
     "answer": 2
   },
   {
@@ -101,7 +91,6 @@
     "choice1": "Java",
     "choice2": "C",
     "choice3": "C++",
-    "choice4": "Python",
     "answer": 2
   },
   {
@@ -109,7 +98,6 @@
     "choice1": "Marks",
     "choice2": "Things",
     "choice3": "Tags",
-    "choice4": "Commands",
     "answer": 3
   },
   {
@@ -117,7 +105,6 @@
     "choice1": "Ruby",
     "choice2": "Java",
     "choice3": "Python",
-    "choice4": "C++",
     "answer": 1
   },
   {
@@ -133,7 +120,6 @@
     "choice1": "Binary",
     "choice2": "Assembly",
     "choice3": "C",
-    "choice4": "Fortran",
     "answer": 2
   },
   {
@@ -149,7 +135,6 @@
     "choice1": "CSS",
     "choice2": "C++",
     "choice3": "Java",
-    "choice4": "Github",
     "answer": 1
   },
   {
@@ -157,7 +142,6 @@
     "choice1": "Java",
     "choice2": "Kotlin",
     "choice3": "JQuery",
-    "choice4": "JTable",
     "answer": 3
   }
 ]
