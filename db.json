@@ -119,45 +119,5 @@
     "choice3": "Python",
     "choice4": "C++",
     "answer": 1
-  },
-  {
-    "question": "Which language is designed for Apple",
-    "choice1": "Objective-C",
-    "choice2": "Ruby",
-    "choice3": "Python",
-    "choice4": "Swift",
-    "answer": 4
-  },
-  {
-    "question": "What is the building blocks of coding using Hexadecimal code known as?",
-    "choice1": "Binary",
-    "choice2": "Assembly",
-    "choice3": "C",
-    "choice4": "Fortran",
-    "answer": 2
-  },
-  {
-    "question": "What uses bits containing 0 and 1 to communicate with the machine",
-    "choice1": "Hexadecimal",
-    "choice2": "Octagonal",
-    "choice3": "Decimal",
-    "choice4": "Binary",
-    "answer": 4
-  },
-  {
-    "question": "What do you use to Style HTML",
-    "choice1": "CSS",
-    "choice2": "C++",
-    "choice3": "Java",
-    "choice4": "Github",
-    "answer": 1
-  },
-  {
-    "question": "Which is a framework of Javascript?",
-    "choice1": "Java",
-    "choice2": "Kotlin",
-    "choice3": "JQuery",
-    "choice4": "JTable",
-    "answer": 3
   }
 ]
