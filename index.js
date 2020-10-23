@@ -13,7 +13,7 @@ const MAX_QUESTIONS = 3;
 
 let questions = [];
 
-fetch( 'https://my-json-server.typicode.com/spistone0426/Final_Assignment_3')
+fetch( 'https://api.mocki.io/v1/812069ed')
     .then((res) => {
         return res.json();
     })
