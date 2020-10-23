@@ -2,31 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quick Quiz - Play</title>
+    <title>Sal Pistone Assignment 3</title>
     <link rel="stylesheet" href="index.css" />
-    <script type="text/javascript" src="questions.json"></script>
+    <script type="text/javascript" src="db.json"></script>
 </head>
 <body>
+
 <div class="page">
 <div class="container">
     <div id="game" class="justify-center flex-column">
-                <p id="progressText" class="hud-prefix">
+                <p id="progressText">
                     Question
                 </p>
                 <div id="progressBar">
                     <div id="progressBarFull"></div>
                 </div>
             </div>
-            <div id="hud-item">
-                <p>
+                <h1>
                     Score
-                </p>
-                <h1 class="hud-main-text" id="score">
-                    0
                 </h1>
-            </div>
+                <h3 class="hud-main-text" id="score">
+                    0
+                </h3>
         </div>
         <h2 id="question">What is the answer to this questions?</h2>
         <div class="choice-container">
