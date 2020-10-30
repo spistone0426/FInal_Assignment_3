@@ -106,33 +106,9 @@ incrementScore = (num) => {
     scoreText.innerText = score;
 };
 
-function start() {
-    startTime = new Date();
-
-    var x = setInterval(function() {
-
-        endTime = new Date();
-        let diffTime = endTime - startTime;
-
-        diffTime /=1000;
-
-        let seconds = Math.round(diffTime);
-
-        var x = setInterval(function () {
-            console.log(seconds + ' seconds');
 
 
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = seconds;
 
-        });
-
-        if (time === 0) {
-            clearInterval(x);
-            window.onload = start();
-        }
-    });
-}
 
 const quizQuestions = [
     {
@@ -300,9 +276,9 @@ const quizQuestions = [
 
 /*
 Sources
+https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-js
+https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-js
 https://www.bestcssbuttongenerator.com/
 https://www.youtube.com/watch?v=jK5zzSA2JHI&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11
 https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally
-https://stackoverflow.com/questions/52912160/start-timer-when-window-load/52912248
-https://stackoverflow.com/questions/4842590/how-to-run-a-function-when-the-page-is-loaded
  */
