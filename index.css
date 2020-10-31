@@ -35,6 +35,10 @@ button:hover{
 }
 
 #stopwatch{
-
+    font-family: digital-7, sans-serif;
 }
 
+@font-face {
+    font-family: digital-7;
+    src: local(C:\Users\spist222\Downloads\digital-7.regular.ttf);
+}
