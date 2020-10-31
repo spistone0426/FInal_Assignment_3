@@ -11,10 +11,9 @@ let availableQuesions = [];
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 let questions = [];
-let startTime;
-let endTime;
 
-
+//The API that I fetched is one I found online to have worked with the code
+// as I had difficulty getting my own to work properly
 fetch( 'https://opentdb.com/api.php?amount=20&category=18&difficulty=medium&type=multiple')
     .then((response) => {
         return response.json();
@@ -56,12 +55,11 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        //go to the end page
-        return window.location.assign('End.html');
+        alert("GAME OVER \n Score: " + score);
+        document.location.reload();
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-    //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -282,4 +280,5 @@ https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-varia
 https://www.bestcssbuttongenerator.com/
 https://www.youtube.com/watch?v=jK5zzSA2JHI&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11
 https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally
+https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Game_over
  */
